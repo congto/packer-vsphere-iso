@@ -4,12 +4,12 @@
 # vcenter_password = ""
 
 # vCenter details
-vcenter_server = ""
+vcenter_server = "vc.hcdlab.local"
 vcenter_sslconnection = true
-vcenter_datacenter = ""
-vcenter_cluster = ""
-vcenter_datastore = ""
-vcenter_folder = ""
+vcenter_datacenter = "HCD-DC01"
+vcenter_cluster = "HCD-Cluster02"
+vcenter_datastore = "datastore2-r620"
+vcenter_folder = "Templates"
 
 # VM Hardware Configuration
 vm_os_type = "windows9Server64Guest"
@@ -34,9 +34,9 @@ config_parameters = {
 # Removable Media Configuration
 vcenter_iso_datastore = ""
 os_iso_path = ""
-os_iso_file = "Windows_Server_2016_Datacenter_EVAL_en-us_14393_refresh.ISO"
+os_iso_file = "win2016.iso"
 vmtools_iso_path = ""
-vmtools_iso_file = "VMware-tools-windows-11.3.5-18557794.iso"
+vmtools_iso_file = "VMware-tools-windows-12.0.0-19345655.iso"
 vm_cdrom_remove = true
 
 # Build Settings
