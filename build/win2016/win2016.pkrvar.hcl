@@ -8,7 +8,7 @@ vcenter_server = "vc.hcdlab.local"
 vcenter_sslconnection = true
 vcenter_datacenter = "HCD-DC01"
 vcenter_cluster = "HCD-Cluster02"
-vcenter_datastore = "datastore2-r620"
+vcenter_datastore = "datastore4-r620"
 vcenter_folder = "Templates"
 
 # VM Hardware Configuration
@@ -32,10 +32,10 @@ config_parameters = {
 }
 
 # Removable Media Configuration
-vcenter_iso_datastore = ""
-os_iso_path = ""
+vcenter_iso_datastore = "datastore4-r620"
+os_iso_path = "ISO"
 os_iso_file = "win2016.iso"
-vmtools_iso_path = ""
+vmtools_iso_path = "ISO"
 vmtools_iso_file = "VMware-tools-windows-12.0.0-19345655.iso"
 vm_cdrom_remove = true
 
