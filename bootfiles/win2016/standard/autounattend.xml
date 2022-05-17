@@ -86,6 +86,12 @@
                 </OSImage>
             </ImageInstall>
             <UserData>
+                <ProductKey>
+                    <!-- Do not uncomment the Key element if you are using trial ISOs -->
+                    <!-- You must uncomment the Key element (and optionally insert your own key) if you are using retail or volume license ISOs -->
+                    <Key>63N6H-DGFTK-DFBGX-VMW7W-WB63F</Key>
+                    <WillShowUI>OnError</WillShowUI>
+                </ProductKey>
                 <AcceptEula>true</AcceptEula>
                 <FullName>Contoso</FullName>
                 <Organization>Contoso</Organization>
