@@ -170,6 +170,16 @@ It is important not to store any credentials in any of the files so they cannot 
 packer build -force -var-file win2022.pkrvar.hcl -var "vcenter_username=administrator@vsphere.local" -var "vcenter_password=VMware1!" -var "winrm_password=VMware1!" .
 ```
 
+### Build windows 2016 stand
+
+```
+cd /root/packer-vsphere-iso/build/win2016
+
+packer build -force -var-file win2016.pkrvar.hcl -only "Windows Server 2016.vsphere-iso.win2016std" .
+```
+
+
+
 Please see [Template User Variables](https://www.packer.io/docs/templates/legacy_json_templates/user-variables) in the Packer documentation for more details.
 
 ## Maintenance
