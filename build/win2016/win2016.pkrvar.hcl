@@ -1,7 +1,7 @@
 # vCenter credentials
 # Use environment variables or pass with build command
-# vcenter_username = ""
-# vcenter_password = ""
+vcenter_username = "administrator@vsphere.local"
+vcenter_password = "Homelab@2020"
 
 # vCenter details
 vcenter_server = "vc.hcdlab.local"
