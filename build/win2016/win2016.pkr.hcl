@@ -9,13 +9,13 @@ packer {
         }
     }
 
-    required_plugins{
-        windows-update = {
-            version =">= 0.14.0"
-            source = "github.com/rgl/windows-update"
-        }
-    }
-}
+#    required_plugins{
+#        windows-update = {
+#           version =">= 0.14.0"
+#            source = "github.com/rgl/windows-update"
+#        }
+#    }
+#}
 
 source "vsphere-iso" "win2016dccore" {
 
@@ -310,15 +310,15 @@ build {
         scripts = var.powershell_scripts
     }
 
-    provisioner "windows-update" {
-        pause_before = "30s"
-        search_criteria = "IsInstalled=0"
-        filters = [ "exclude:$_.Title -like '*VMware*'",
-                        "exclude:$_.Title -like '*Preview*'",
-                        "exclude:$_.Title -like '*Defender*'",
-                        "exclude:$_.InstallationBehavior.CanRequestUserInput",
-                        "include:$true" ]
-        restart_timeout = "120m"
-    }
+#    provisioner "windows-update" {
+#        pause_before = "30s"
+#        search_criteria = "IsInstalled=0"
+#        filters = [ "exclude:$_.Title -like '*VMware*'",
+#                        "exclude:$_.Title -like '*Preview*'",
+#                        "exclude:$_.Title -like '*Defender*'",
+#                        "exclude:$_.InstallationBehavior.CanRequestUserInput",
+#                        "include:$true" ]
+#        restart_timeout = "120m"
+#    }
 
-}
+#}
